@@ -29,8 +29,8 @@ const Menu = () => {
                 scrub: true,
             }
         })
-        .to('#m-right-leaf', { y: 200 })
-        .to('#m-left-leaf', { y: -100, rotate: 20, x: -100 });
+        .to('#m-right-leaf', { y: 200, rotate: -20, x:100, ease: 'power1.inOut' })
+        .to('#m-left-leaf', { y: -100, rotate: 20, x: -100,  ease: 'power1.inOut' });
     }, []);
 
     const totalCocktails = allCocktails.length;
